@@ -7,8 +7,8 @@ deployment "Account_Demo1" {
   inputs = {
     region         = "us-east-1"
     identity_token = identity_token.aws.jwt
-    role_arn       = "arn:aws:iam::0123456789012:role/HCPTerraform-Role-StackSet"
-    default_tags   = { stacks-environment = "dop206-example-infra-1" }
+    role_arn       = "arn:aws:iam::202533543969:role/HCPTerraform-Role-StackSet"
+    default_tags   = { stacks-environment = "example-infra-1" }
     enable_security_scanner = true
     enable_finops_scanner   = true
   }
@@ -16,10 +16,10 @@ deployment "Account_Demo1" {
 
 deployment "Account_Demo2" {
   inputs = {
-    region         = "us-east-1"
+    region         = "ap-south-1"
     identity_token = identity_token.aws.jwt
-    role_arn       = "arn:aws:iam::987654321234:role/HCPTerraform-Role-StackSet"
-    default_tags   = { stacks-environment = "dop206-example-infra-1" }
+    role_arn       = "arn:aws:iam::047719657563:role/HCPTerraform-Role-StackSet"
+    default_tags   = { stacks-environment = "example-infra-1" }
     enable_security_scanner = true
     enable_finops_scanner   = true
   }
